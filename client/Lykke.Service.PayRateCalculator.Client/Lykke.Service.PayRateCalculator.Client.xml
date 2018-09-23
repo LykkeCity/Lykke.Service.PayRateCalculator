@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lykke.Service.PayRateCalculator.Client</name>
+    </assembly>
+    <members>
+        <member name="T:Lykke.Service.PayRateCalculator.Client.AutofacExtension">
+            <summary>
+            Extension for client registration
+            </summary>
+        </member>
+        <member name="M:Lykke.Service.PayRateCalculator.Client.AutofacExtension.RegisterPayRateCalculatorClient(Autofac.ContainerBuilder,Lykke.Service.PayRateCalculator.Client.PayRateCalculatorServiceClientSettings,System.Func{Lykke.HttpClientGenerator.HttpClientGeneratorBuilder,Lykke.HttpClientGenerator.HttpClientGeneratorBuilder})">
+            <summary>
+            Registers <see cref="T:Lykke.Service.PayRateCalculator.Client.IPayRateCalculatorClient"/> in Autofac container using <see cref="T:Lykke.Service.PayRateCalculator.Client.PayRateCalculatorServiceClientSettings"/>.
+            </summary>
+            <param name="builder">Autofac container builder.</param>
+            <param name="settings">PayRateCalculator client settings.</param>
+            <param name="builderConfigure">Optional <see cref="T:Lykke.HttpClientGenerator.HttpClientGeneratorBuilder"/> configure handler.</param>
+        </member>
+        <member name="T:Lykke.Service.PayRateCalculator.Client.IPayRateCalculatorApi">
+            <summary>
+            PayRateCalculator client API interface.
+            </summary>
+        </member>
+        <member name="T:Lykke.Service.PayRateCalculator.Client.IPayRateCalculatorClient">
+            <summary>
+            PayRateCalculator client interface.
+            </summary>
+        </member>
+        <member name="P:Lykke.Service.PayRateCalculator.Client.IPayRateCalculatorClient.Api">
+            <summary>Application Api interface</summary>
+        </member>
+        <member name="T:Lykke.Service.PayRateCalculator.Client.PayRateCalculatorClient">
+            <summary>
+            PayRateCalculator API aggregating interface.
+            </summary>
+        </member>
+        <member name="P:Lykke.Service.PayRateCalculator.Client.PayRateCalculatorClient.Api">
+            <summary>Inerface to PayRateCalculator Api.</summary>
+        </member>
+        <member name="M:Lykke.Service.PayRateCalculator.Client.PayRateCalculatorClient.#ctor(Lykke.HttpClientGenerator.IHttpClientGenerator)">
+            <summary>C-tor</summary>
+        </member>
+        <member name="T:Lykke.Service.PayRateCalculator.Client.PayRateCalculatorServiceClientSettings">
+            <summary>
+            PayRateCalculator client settings.
+            </summary>
+        </member>
+        <member name="P:Lykke.Service.PayRateCalculator.Client.PayRateCalculatorServiceClientSettings.ServiceUrl">
+            <summary>Service url.</summary>
+        </member>
+    </members>
+</doc>
